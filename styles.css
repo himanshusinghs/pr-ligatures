@@ -1,0 +1,42 @@
+.blob-code-inner, 
+pre, 
+code, 
+.d-inline-block span, 
+.js-file-line, 
+.pl-s, 
+.pl-pds, 
+.pl-c, 
+.pl-c1, 
+.pl-en {
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace !important;
+  font-feature-settings: "liga", "calt" !important;
+  font-variant-ligatures: contextual !important;
+}
+
+/* Additional styles for better readability */
+.blob-code-inner {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* Fix alignment issues with line numbers */
+.blob-num {
+  padding-right: 10px !important;
+  vertical-align: top !important;
+}
+
+.blob-code {
+  padding-left: 10px !important;
+  vertical-align: top !important;
+}
+
+/* Ensure consistent line height between line numbers and code */
+table.diff-table tr,
+table.js-file-line-container tr {
+  line-height: 1.5 !important;
+}
+
+/* Fix alignment in PR diff views */
+.diff-view .blob-code-inner {
+  vertical-align: top !important;
+}
